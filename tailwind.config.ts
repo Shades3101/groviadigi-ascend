@@ -36,6 +36,13 @@ export default {
           DEFAULT: "hsl(var(--accent-bright))",
           foreground: "hsl(var(--accent-bright-foreground))",
         },
+        invert: {
+          DEFAULT: "hsl(var(--invert-bg))",
+          deep: "hsl(var(--invert-bg-deep))",
+          fg: "hsl(var(--invert-fg))",
+          "fg-soft": "hsl(var(--invert-fg-soft))",
+          "fg-muted": "hsl(var(--invert-fg-muted))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
