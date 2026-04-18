@@ -7,7 +7,7 @@ const steps = [
 
 const Process = () => {
   return (
-    <section id="process" className="bg-ink text-paper py-28 md:py-40 relative overflow-hidden grain">
+    <section id="process" className="bg-ink text-paper dark:bg-paper-deep dark:text-ink py-28 md:py-40 relative overflow-hidden grain">
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 relative z-10">
         <div className="grid md:grid-cols-12 gap-10 mb-20 md:mb-28">
           <div className="md:col-span-3">

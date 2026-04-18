@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -42,10 +43,13 @@ const Nav = () => {
           ))}
         </ul>
 
-        <a href="#contact" className="hidden md:inline-flex pill-cta text-sm">
-          Start a project
-          <span aria-hidden>→</span>
-        </a>
+        <div className="hidden md:flex items-center gap-4">
+          <ThemeToggle />
+          <a href="#contact" className="pill-cta text-sm">
+            Start a project
+            <span aria-hidden>→</span>
+          </a>
+        </div>
 
         <button
           aria-label="Menu"
