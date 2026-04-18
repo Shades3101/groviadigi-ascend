@@ -50,6 +50,15 @@
 
     --radius: 0.25rem;
 
+    /* Stable inverted surface — always dark bg with light fg, in BOTH themes.
+       Use for sections that must remain "dark zones" regardless of mode. */
+    --invert-bg: 20 14% 8%;
+    --invert-bg-deep: 22 12% 12%;
+    --invert-fg: 40 30% 96%;
+    --invert-fg-soft: 40 20% 88%;
+    --invert-fg-muted: 36 10% 70%;
+    --invert-border: 40 30% 96%;
+
     /* Gradients & effects */
     --grain-opacity: 0.06;
     --shadow-soft: 0 30px 60px -30px hsl(var(--ink) / 0.25);
@@ -92,6 +101,13 @@
     --input: 24 8% 18%;
     --ring: 78 92% 60%;
     --grain-opacity: 0.08;
+    /* In dark mode the "invert zone" becomes a slightly deeper black to keep separation */
+    --invert-bg: 24 10% 4%;
+    --invert-bg-deep: 24 10% 8%;
+    --invert-fg: 36 22% 94%;
+    --invert-fg-soft: 36 16% 82%;
+    --invert-fg-muted: 32 8% 60%;
+    --invert-border: 36 22% 94%;
   }
 }
 
