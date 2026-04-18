@@ -7,29 +7,32 @@ const steps = [
 
 const Process = () => {
   return (
-    <section id="process" className="bg-ink text-paper dark:bg-paper-deep dark:text-ink py-28 md:py-40 relative overflow-hidden grain">
+    <section
+      id="process"
+      className="bg-invert text-invert-fg py-28 md:py-40 relative overflow-hidden grain"
+    >
       <div className="mx-auto max-w-[1400px] px-6 md:px-10 relative z-10">
         <div className="grid md:grid-cols-12 gap-10 mb-20 md:mb-28">
           <div className="md:col-span-3">
-            <p className="font-mono-tag text-paper/60 reveal">[ 03 — Process ]</p>
+            <p className="font-mono-tag text-invert-fg-muted reveal">[ 03 — Process ]</p>
           </div>
           <div className="md:col-span-9">
             <h2 className="font-display text-5xl md:text-7xl leading-[0.95] tracking-tight reveal">
               A method, not
-              <span className="italic font-light text-paper/70"> a pitch deck.</span>
+              <span className="italic font-light text-invert-fg-soft/70"> a pitch deck.</span>
             </h2>
           </div>
         </div>
 
-        <ol className="grid md:grid-cols-4 gap-px bg-paper/10 border border-paper/10">
+        <ol className="grid md:grid-cols-4 gap-px bg-invert-fg/10 border border-invert-fg/10">
           {steps.map((s) => (
-            <li key={s.n} className="bg-ink p-8 md:p-10 reveal">
+            <li key={s.n} className="bg-invert p-8 md:p-10 reveal">
               <div className="flex items-center justify-between mb-12">
                 <span className="font-display text-bright text-5xl">{s.n}</span>
-                <span className="font-mono-tag text-paper/40">STEP</span>
+                <span className="font-mono-tag text-invert-fg-muted">STEP</span>
               </div>
               <h3 className="font-display text-3xl mb-3">{s.t}</h3>
-              <p className="text-paper/70 leading-relaxed">{s.d}</p>
+              <p className="text-invert-fg-soft/80 leading-relaxed">{s.d}</p>
             </li>
           ))}
         </ol>
