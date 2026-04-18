@@ -29,7 +29,24 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="md:col-span-4 md:col-start-9 flex flex-col gap-4">
+          <div className="md:col-span-4 md:col-start-9 flex flex-col gap-5">
+            {/* Availability card — fills the empty space above the CTA */}
+            <div className="border border-ink/15 rounded-sm p-5 bg-paper-deep/40 backdrop-blur-sm">
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-2">
+                  <span className="pulse-dot" aria-hidden />
+                  <span className="font-mono-tag text-ink-soft">Now booking · Q3</span>
+                </div>
+                <span className="font-mono-tag text-ink-muted">2 / 4</span>
+              </div>
+              <p className="font-display text-2xl text-ink leading-tight">
+                Two engagements <span className="italic font-light text-ink-soft">remaining</span> this quarter.
+              </p>
+              <div className="mt-4 h-px w-full bg-ink/10 relative overflow-hidden">
+                <span className="absolute inset-y-0 left-0 w-1/2 bg-bright" />
+              </div>
+            </div>
+
             <a href="#contact" className="pill-cta justify-between text-base">
               Start a project
               <span aria-hidden>→</span>
