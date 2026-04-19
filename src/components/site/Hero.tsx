@@ -7,7 +7,7 @@ const Hero = () => {
         {/* Top meta line */}
         <div className="flex items-center justify-between font-mono-tag text-ink-muted mb-16 md:mb-24">
           <span>Index — 001</span>
-          <span className="hidden md:inline">Studio est. 2021</span>
+          <span className="hidden md:inline">New studio · Founding cohort</span>
           <span>EST · IN · IND</span>
         </div>
 
@@ -23,9 +23,9 @@ const Hero = () => {
           <div className="md:col-span-5 md:col-start-1">
             <p className="font-mono-tag text-ink-muted mb-4">[ 01 — What we do ]</p>
             <p className="text-ink-soft text-lg md:text-xl leading-relaxed">
-              Groviadigi is a digital studio for brands that want measurable growth
-              without losing taste. We build brand systems and performance engines
-              that compound — quietly, relentlessly.
+              Groviadigi is a new digital studio building brand systems and
+              performance engines for founders who want growth without the
+              agency theatre. Small by design. Hungry by default.
             </p>
           </div>
 
@@ -35,15 +35,15 @@ const Hero = () => {
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2">
                   <span className="pulse-dot" aria-hidden />
-                  <span className="font-mono-tag text-ink-soft">Now booking · Q3</span>
+                  <span className="font-mono-tag text-ink-soft">Founding clients · open</span>
                 </div>
-                <span className="font-mono-tag text-ink-muted">2 / 4</span>
+                <span className="font-mono-tag text-ink-muted">0 / 3</span>
               </div>
               <p className="font-display text-2xl text-ink leading-tight">
-                Two engagements <span className="italic font-light text-ink-soft">remaining</span> this quarter.
+                Three founding partners <span className="italic font-light text-ink-soft">at studio rates</span> — for the work that builds our book.
               </p>
               <div className="mt-4 h-px w-full bg-ink/10 relative overflow-hidden">
-                <span className="absolute inset-y-0 left-0 w-1/2 bg-bright" />
+                <span className="absolute inset-y-0 left-0 w-0 bg-bright" />
               </div>
             </div>
 

@@ -106,9 +106,9 @@ const Contact = () => {
             <div>
               <p className="font-mono-tag text-invert-fg-muted mb-3">Booking</p>
               <p className="text-invert-fg-soft/80 leading-relaxed">
-                Now booking projects for Q3.
+                Open for founding clients.
                 <br />
-                Two engagements per quarter.
+                Three partners at studio rates.
               </p>
             </div>
           </aside>

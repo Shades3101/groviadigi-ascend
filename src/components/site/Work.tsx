@@ -1,13 +1,22 @@
-import w1 from "@/assets/work-1.jpg";
-import w2 from "@/assets/work-2.jpg";
-import w3 from "@/assets/work-3.jpg";
-import w4 from "@/assets/work-4.jpg";
-
-const work = [
-  { img: w1, client: "Halcyon Skincare", scope: "Brand · Web · Paid", year: "2024", note: "+312% revenue / 8 mo" },
-  { img: w2, client: "Northline Studios", scope: "SEO · Content", year: "2024", note: "0 → 84k organic / yr" },
-  { img: w3, client: "Otto & Mae", scope: "Identity · DTC", year: "2023", note: "Launch · sold out wk 1" },
-  { img: w4, client: "Vela Capital", scope: "Brand · Web", year: "2024", note: "Seed → Series A" },
+const offers = [
+  {
+    n: "01",
+    title: "Brand Sprint",
+    timing: "2 weeks",
+    body: "Positioning, name audit, identity direction and a one-page brand system you can ship against immediately.",
+  },
+  {
+    n: "02",
+    title: "Launch Engine",
+    timing: "6 weeks",
+    body: "Site, paid foundations, analytics and a 90-day content runway. Built to take a product from zero to traction.",
+  },
+  {
+    n: "03",
+    title: "Growth Partner",
+    timing: "Quarterly",
+    body: "Embedded studio. Strategy, design, media and content under one retainer — measured against revenue, not hours.",
+  },
 ];
 
 const Work = () => {
@@ -16,47 +25,38 @@ const Work = () => {
       <div className="mx-auto max-w-[1400px] px-6 md:px-10">
         <div className="grid md:grid-cols-12 gap-10 mb-20 md:mb-28">
           <div className="md:col-span-3">
-            <p className="font-mono-tag text-ink-muted reveal">[ 04 — Selected work ]</p>
+            <p className="font-mono-tag text-ink-muted reveal">[ 04 — Ways to work ]</p>
           </div>
           <div className="md:col-span-9 flex items-end justify-between gap-10">
             <h2 className="font-display text-5xl md:text-7xl leading-[0.95] tracking-tight text-ink reveal">
-              Quiet work.
-              <span className="italic font-light text-ink-soft"> Loud results.</span>
+              Three doors.
+              <span className="italic font-light text-ink-soft"> One studio.</span>
             </h2>
             <a href="#contact" className="hidden md:inline-block font-mono-tag link-underline text-ink reveal">
-              All case studies →
+              Start a conversation →
             </a>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-x-8 gap-y-20">
-          {work.map((p, i) => (
+        <div className="space-y-px bg-ink/10 border border-ink/10">
+          {offers.map((o) => (
             <a
-              key={p.client}
+              key={o.n}
               href="#contact"
-              className={`group block reveal ${i % 2 === 1 ? "md:translate-y-24" : ""}`}
+              className="group block bg-paper hover:bg-paper-deep transition-colors duration-500 reveal"
             >
-              <div className="relative overflow-hidden bg-paper-deep">
-                <img
-                  src={p.img}
-                  alt={`${p.client} — ${p.scope}`}
-                  loading="lazy"
-                  width={1024}
-                  height={1280}
-                  className="h-[60vh] w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
-                />
-                <div className="absolute top-4 left-4 font-mono-tag text-paper bg-ink/60 backdrop-blur px-3 py-1 rounded-full">
-                  {p.year}
-                </div>
-              </div>
-              <div className="mt-6 flex items-start justify-between gap-6">
-                <div>
-                  <h3 className="font-display text-3xl md:text-4xl text-ink">{p.client}</h3>
-                  <p className="font-mono-tag text-ink-muted mt-2">{p.scope}</p>
-                </div>
-                <p className="font-display italic text-ink-soft text-xl md:text-2xl text-right max-w-[12ch]">
-                  {p.note}
+              <div className="grid md:grid-cols-12 gap-6 items-baseline px-6 md:px-12 py-10 md:py-14">
+                <span className="md:col-span-1 font-mono-tag text-ink-muted">{o.n}</span>
+                <h3 className="md:col-span-4 font-display text-3xl md:text-5xl text-ink leading-[0.95]">
+                  {o.title}
+                </h3>
+                <p className="md:col-span-5 text-ink-soft text-base md:text-lg leading-relaxed max-w-xl">
+                  {o.body}
                 </p>
+                <div className="md:col-span-2 flex md:justify-end items-center gap-3">
+                  <span className="font-mono-tag text-ink-muted">{o.timing}</span>
+                  <span className="text-bright transition-transform duration-500 group-hover:translate-x-1" aria-hidden>→</span>
+                </div>
               </div>
             </a>
           ))}
