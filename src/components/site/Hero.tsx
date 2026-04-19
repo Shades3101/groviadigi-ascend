@@ -11,7 +11,7 @@ const Hero = () => {
           <span>EST · IN · IND</span>
         </div>
 
-        <h1 className="font-display text-ink leading-[0.92] tracking-tight text-[14vw] md:text-[10.5vw] lg:text-[9vw]">
+        <h1 className="font-display text-ink leading-[0.92] tracking-tight text-[14vw] md:text-[15.5vw] lg:text-[14.2vw] xl:text-[13.6vw] w-full">
           <span className="block">Growth,</span>
           <span className="block italic font-light">
             beautifully<span className="text-bright">.</span>
