@@ -98,7 +98,7 @@ const Contact = () => {
             <div>
               <p className="font-mono-tag text-invert-fg-muted mb-3">Studio</p>
               <p className="text-invert-fg-soft/80 leading-relaxed">
-                Bandra West, Mumbai
+                Rajasthan, India
                 <br />
                 Mon — Fri · 10:00 — 19:00 IST
               </p>
