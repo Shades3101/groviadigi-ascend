@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="flex items-center justify-between font-mono-tag text-ink-muted mb-16 md:mb-24">
           <span>Index — 001</span>
           <span className="hidden md:inline">New studio · Founding cohort</span>
-          <span>EST · 2026 · AJM</span>
+          <span>EST · 2026</span>
         </div>
 
         <h1 className="font-display text-ink leading-[0.92] tracking-tight text-[14vw] md:text-[15.5vw] lg:text-[14.2vw] xl:text-[13.6vw] w-full">
