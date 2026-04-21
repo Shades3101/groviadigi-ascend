@@ -11,19 +11,19 @@ const Studio = () => {
               Founder-led.
               <span className="italic font-light text-ink-soft"> Built this year.</span>
             </h2>
-            <p className="mt-8 max-w-2xl text-ink-soft text-lg md:text-xl leading-relaxed reveal">
-              Groviadigi is a young studio out of India, started by people who
-              got tired of watching good brands get diluted by big-agency
-              process. No account managers. No layers. The person you meet on
-              the call is the person who does the work.
-            </p>
+             <p className="mt-8 max-w-2xl text-ink-soft text-lg md:text-xl leading-relaxed reveal">
+               Groviadigi is a young studio out of Ajmer, Rajasthan, started by people who
+               got tired of watching good brands get diluted by big-agency
+               process. No account managers. No layers. The person you meet on
+               the call is the person who does the work.
+             </p>
           </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-px bg-ink/10 border border-ink/10">
           {[
-            { k: "Founded", v: "2025" },
-            { k: "Based", v: "Mumbai · India" },
+            { k: "Founded", v: "2026" },
+            { k: "Based", v: "Ajmer · Rajasthan · India" },
             { k: "Team", v: "Small by design" },
           ].map((m) => (
             <div key={m.k} className="bg-paper p-8 md:p-12 reveal">
