@@ -22,8 +22,8 @@ const Studio = () => {
 
         <div className="grid md:grid-cols-3 gap-px bg-ink/10 border border-ink/10">
           {[
-            { k: "Founded", v: "2025" },
-            { k: "Based", v: "Mumbai · India" },
+            { k: "Founded", v: "2026" },
+            { k: "Based", v: "Ajmer · Rajasthan · India" },
             { k: "Team", v: "Small by design" },
           ].map((m) => (
             <div key={m.k} className="bg-paper p-8 md:p-12 reveal">

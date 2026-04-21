@@ -31,7 +31,7 @@ const Footer = () => {
             <p className="font-mono-tag text-invert-fg-muted mb-4">Contact</p>
             <ul className="space-y-2 text-invert-fg-soft/80">
               <li>hello@groviadigi.com</li>
-              <li>Mumbai, IN</li>
+              <li>Ajmer, Rajasthan, IN</li>
             </ul>
           </div>
         </div>
